@@ -18,6 +18,8 @@ body {
 .header {
     height: 44px;
     background-color: #333;
+    position: relative;
+    z-index: 100;
 }
 main {
     position: relative;
@@ -31,6 +33,7 @@ main {
     position: absolute;
     width: 100%;
     top: 44px;
+    z-index: 100;
     &-logo {
         font: 600 normal em(24)/1 'SF Pro Display';
     }
@@ -77,7 +80,14 @@ h2 {
 }
 
 .section {
+    height: 100vh;
     margin-top: 100px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .iphone {
