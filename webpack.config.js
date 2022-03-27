@@ -89,6 +89,18 @@ module.exports = (env = {}, argv) => {
                     }]
                 },
 
+                // Loading Videos
+                {
+                    test: /\.(mp4)$/,
+                    use: [{
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'videos',
+                            name: '[name].[ext]'
+                        }
+                    }]
+                },
+
                 // Loading Fonts
                 {
                     test: /\.(ttf|otf|eot|woff|woff2)$/,
@@ -100,9 +112,9 @@ module.exports = (env = {}, argv) => {
                         }
                     }]
                 },
-                
-                 // Shaders
-                 {
+
+                // Shaders
+                {
                     test: /\.(glsl)$/,
                     exclude: /node_modules/,
                     use: ['raw-loader']

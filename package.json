@@ -37,11 +37,11 @@
         "webpack": "^5.64.4",
         "webpack-cli": "^4.9.1",
         "webpack-dev-server": "^4.6.0",
-        "webpack-shell-plugin-next": "^2.2.2"
+        "webpack-shell-plugin-next": "^2.2.2",
+        "css-loader": "^3.4.2",
+        "core-js": "^3.6.4"
     },
     "dependencies": {
-        "core-js": "^3.6.4",
-        "css-loader": "^3.4.2",
         "gsap": "^3.9.1"
     }
 }

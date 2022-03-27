@@ -3,28 +3,106 @@ html {
 }
 
 body {
-    font-size: 16px;
-    overflow-x: hidden;
-    font-family: 'Coustard', serif;
-    font-weight: 400;
-    color: #fff;
-    background: #000 !important;
-}
-
-* {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    font-family: 'SF Pro Display', serif;
+    font-weight: 400;
+    color: #000;
+    font-synthesis: none;
+    -moz-font-feature-settings: 'kern';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-#container {
-    background-color: #000;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+.header {
+    height: 44px;
+    background-color: #333;
+}
+main {
+    position: relative;
 }
 
-canvas {
-    display: block;
+.subheader {
+    height: 52px;
+    border-bottom: 1px solid #ccc;
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    &-logo {
+        font: 600 normal em(24)/1 'SF Pro Display';
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.next {
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+    .container {
+        width: 100%;
+        max-width: 900px;
+    }
+    &--gray {
+        background-color: #f0f0f0;
+    }
+    p {
+        font: 600 normal em(32)/1.25 'SF Pro Display';
+    }
+}
+
+h2 {
+    font: 500 normal em(80)/1 'SF Pro Display';
+    margin: 0 0 52px;
+    letter-spacing: -.015em;
+}
+
+.animation {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.iphone {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 200%;
+    &-frame {
+        position: absolute;
+    }
+    &-frame,
+    &-video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    img,
+    video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
 }

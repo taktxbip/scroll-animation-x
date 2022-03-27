@@ -16,6 +16,12 @@
     @return m#{i}n(#{$numbers});
 }
 
+@function em($size) {
+    $remSize: math.div($size, 16);
+    //Default font size on html element is 100%, equivalent to 16px;
+    @return #{$remSize}em;
+}
+
 @function rem($size) {
     $remSize: math.div($size, get('font.size'));
     //Default font size on html element is 100%, equivalent to 16px;
