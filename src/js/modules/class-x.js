@@ -10,8 +10,6 @@ export default class X {
         canvas.width = this.width;
         canvas.height = this.height;
 
-        console.log(this.width, this.height);
-
         document.querySelector('.animation').appendChild(canvas);
     }
 

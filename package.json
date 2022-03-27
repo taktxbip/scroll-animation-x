@@ -23,6 +23,8 @@
         "autoprefixer": "^9.0.0",
         "babel-loader": "^8.2.3",
         "clean-webpack-plugin": "^4.0.0",
+        "core-js": "^3.6.4",
+        "css-loader": "^3.4.2",
         "file-loader": "^6.2.0",
         "html-loader": "^3.0.1",
         "html-webpack-plugin": "^5.5.0",
@@ -37,11 +39,11 @@
         "webpack": "^5.64.4",
         "webpack-cli": "^4.9.1",
         "webpack-dev-server": "^4.6.0",
-        "webpack-shell-plugin-next": "^2.2.2",
-        "css-loader": "^3.4.2",
-        "core-js": "^3.6.4"
+        "webpack-shell-plugin-next": "^2.2.2"
     },
     "dependencies": {
-        "gsap": "^3.9.1"
+        "gsap": "^3.9.1",
+        "scrollmagic": "^2.0.7",
+        "scrollmagic-plugins": "^1.0.8"
     }
 }
